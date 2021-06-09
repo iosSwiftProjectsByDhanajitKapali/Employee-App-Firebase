@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TransactionalCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="notificationCell" rowHeight="110" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="Employee_App_Firebase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FQ-fF-rHI">
+                        <rect key="frame" x="70" y="27" width="130" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="DAr-JK-Xtx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16/09/2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwp-DQ-Bnh">
+                        <rect key="frame" x="210" y="27" width="85" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2lp-LA-ESM"/>
+                            <constraint firstAttribute="width" constant="85" id="j8U-Kh-pjO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notification_Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="o0b-mN-U3F">
+                        <rect key="frame" x="20" y="22" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="GIo-fT-drU"/>
+                            <constraint firstAttribute="height" constant="40" id="OQ6-cb-Tj8"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-zo-g5L">
+                        <rect key="frame" x="68" y="56" width="236" height="35"/>
+                        <color key="tintColor" red="0.93725490199999995" green="0.18823529410000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="MyG-JJ-PmM"/>
+                        </constraints>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="mTK-zo-g5L" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="GX5-e7-HfC"/>
+                    <constraint firstItem="o0b-mN-U3F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="LIH-eJ-4uy"/>
+                    <constraint firstItem="3FQ-fF-rHI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="SDK-iX-HjQ"/>
+                    <constraint firstItem="kwp-DQ-Bnh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="UYg-c7-vOY"/>
+                    <constraint firstItem="o0b-mN-U3F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="VxQ-VS-tJt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kwp-DQ-Bnh" secondAttribute="trailing" constant="9" id="W7P-qh-0Gs"/>
+                    <constraint firstItem="kwp-DQ-Bnh" firstAttribute="leading" secondItem="3FQ-fF-rHI" secondAttribute="trailing" constant="10" id="dFZ-Pn-gPl"/>
+                    <constraint firstItem="mTK-zo-g5L" firstAttribute="leading" secondItem="o0b-mN-U3F" secondAttribute="trailing" constant="8" id="eZq-R6-P7Z"/>
+                    <constraint firstItem="mTK-zo-g5L" firstAttribute="top" secondItem="3FQ-fF-rHI" secondAttribute="bottom" constant="8" id="j2t-V7-gTe"/>
+                    <constraint firstItem="3FQ-fF-rHI" firstAttribute="leading" secondItem="o0b-mN-U3F" secondAttribute="trailing" constant="10" id="lzu-eu-LOu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mTK-zo-g5L" secondAttribute="bottom" constant="8" id="r7q-4f-q83"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Pv5-qP-Qrq"/>
+            <connections>
+                <outlet property="notificationBody" destination="mTK-zo-g5L" id="Jb5-VT-vYQ"/>
+                <outlet property="notificationDate" destination="kwp-DQ-Bnh" id="JaW-hZ-Esb"/>
+                <outlet property="notificationTitle" destination="3FQ-fF-rHI" id="lmf-I7-HXG"/>
+            </connections>
+            <point key="canvasLocation" x="392" y="288.75562218890559"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Notification_Symbol" width="46" height="46"/>
+    </resources>
+</document>

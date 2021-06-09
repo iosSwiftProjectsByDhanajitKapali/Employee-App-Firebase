@@ -1,0 +1,18 @@
+disabled_rules:
+  - trailing_whitespace
+  - comment_spacing
+  - vertical_whitespace
+  - opening_brace
+  - colon
+  - statement_position
+  - unused_closure_parameter
+  - mark
+  - line_length
+  - identifier_name
+  - no_space_in_method_call
+  - trailing_newline
+  - comma
+  - unused_optional_binding
+
+excluded:
+  - Pods
